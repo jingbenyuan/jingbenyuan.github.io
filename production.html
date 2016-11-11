@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scalable=1.0,user-scalable=0">
+	<title>京本源网站</title>
+
+	<link rel="stylesheet" href="css/jby_common.css">
+	<style type="text/css">
+
+		/* iPad横屏以上宽度样式
+		----------------------------------------------------------------------------------------------------------*/
+		/*@media only screen and (min-width: 1000px) {*/
+		.productBg {
+			background-image: url("images/jby_product_bg.png");
+		}
+
+		.jby-tabContent {
+			background-color: #f2f2f2;
+			overflow: hidden;
+			padding: 5rem 5%;
+		}
+
+		.jby-tabBox:nth-child(1) {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.productIntroduce {
+			background-color: #fff;
+			width: 25%;
+			height: 35rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.productIntroduce p {
+			line-height: 2rem;
+		}
+
+		.productIntroduce p {
+			line-height: 2rem;
+			padding: 1rem 2.5rem;
+			color: #999;
+		}
+
+		.productIntroduce-bg {
+			margin-top: 2rem;
+			display: inline-block;
+			height: 9rem;
+			width: 9rem;
+			background-color: #4c4c4c;
+			border-radius: 4.5rem;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 50%;
+		}
+
+		.productIntroduce:nth-child(1) .productIntroduce-bg {
+			background-image: url("images/product_nav_bg1.png");
+		}
+
+		.productIntroduce:nth-child(2) .productIntroduce-bg {
+			background-image: url("images/product_nav_bg2.png");
+		}
+
+		.productIntroduce:nth-child(3) .productIntroduce-bg {
+			background-image: url("images/product_nav_bg3.png");
+		}
+
+		#carousel {
+		    height:60rem;
+		    position:relative;
+		}
+		#carousel img {
+			visibility:hidden;
+		    cursor:pointer;
+		}
+
+		.jby-tabBox:nth-child(3) {
+			text-align: center;
+		}
+
+		/*}*/
+
+	</style>
+
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/plugins/jquery.waterwheelCarousel-v2.3.0/waterwheelCarousel.js"></script>
+	<script src="js/jby_common.js"></script>
+	<script type="text/javascript">
+		$(function () {
+
+			//页面初始化
+			jby.init();
+
+
+			var screenWidth = $(window).outerWidth();
+
+			$("#carousel").width(screenWidth *.90);
+			$("#carousel img").css({
+				"width": screenWidth *.73 + "px",
+				"height": screenWidth *.73 / 1.5 + "px"
+			});
+
+			$("#carousel").waterwheelCarousel({
+				flankingItems: 3,
+				separation: 250
+			})
+
+		})
+
+	</script>
+</head>
+<body>
+<!--头部固定导航-->
+<header class="jby-header">
+	<h1 class="jby-logoBox">
+		<a href="http://www.caisign.com/" class="jby-logo">
+			<img src="images/jby_logo_bg.png" alt="京本源">
+		</a>
+	</h1>
+	<div class="jby-menuBox">
+		<ul class="jby-menu">
+			<li>
+				<a href="index.html">首页</a>
+			</li>
+			<li>
+				<a href="http://www.caisign.com/" target="_blank">彩云签</a>
+			</li>
+			<li>
+				<a href="production.html">产品服务</a>
+			</li>
+			<li>
+				<a href="safety.html">安全保障</a>
+			</li>
+			<!--<li>
+				<a href="###">加盟合作</a>
+			</li>
+			<li>
+				<a href="###">新闻公告</a>
+			</li>-->
+			<li>
+				<a href="aboutUs.html">京本源</a>
+			</li>
+		</ul>
+	</div>
+</header>
+<section class="jby-first jby-title productBg">
+	<h2 class="jby-h2">产品服务</h2>
+	<p>product service</p>
+</section>
+<section class="jby-title-nav">
+	<a href="###" class="title-nav-tab active">产品介绍</a>
+	<a href="###" class="title-nav-tab">专利介绍</a>
+	<a href="###" class="title-nav-tab">产品优势</a>
+</section>
+<section class="jby-tabContent">
+	<section class="jby-tabBox">
+		<div class="productIntroduce">
+			<em class="productIntroduce-bg"></em>
+			<h3 class="jby-h3">彩云签平台</h3>
+			<p>彩云签是国内唯一实现了电子合同与纸质合同（ETP,Electronic To Paper）自由切换签署、使用的互联网签约平台。依托专利技术，成功实现了电子合同向纸质合同延伸的司法取证，保障了电子合同在计算机文件或打印状态下的合法性和司法鉴定法律效力，满足了用户应用电子签章快速、安全签约和电子合同直接打印纸质合同的需求。</p>
+		</div>
+		<div class="productIntroduce">
+			<em class="productIntroduce-bg"></em>
+			<h3 class="jby-h3">数字指纹印章</h3>
+			<p>依托专利技术，DFS平台为用户提供最安全的数字指纹印章，DFS平台保证每次生成的印章都是唯一的，在司法鉴定中能够取得可靠的证据链，确保其不可伪造，不可否认。</p>
+		</div>
+		<div class="productIntroduce">
+			<em class="productIntroduce-bg"></em>
+			<h3 class="jby-h3">安全用印监管系统</h3>
+			<p>为政府机构提供专门的电子签章产品，达到用印安全、易监管的产品标准，每个印章达到“一章一纹一密”的防伪标准，提供电子文书可直接打印的便捷服务，提高用户的业务服务能力。</p>
+		</div>
+	</section>
+	<section class="jby-tabBox">
+		<div id="carousel">
+			<img src="images/img1.jpg"/>
+			<img src="images/img2.jpg"/>
+			<img src="images/img3.jpg"/>
+		</div>
+	</section>
+	<section class="jby-tabBox">
+		<img src="images/ys_bg.png">
+	</section>
+</section>
+<!--页脚-->
+<footer class="jby-footer">
+	<div class="footer-top">
+		<div class="footer-service">
+			<h3 class="jby-h3">我们的服务</h3>
+			<p>
+				<a href="http://www.caisign.com/">彩云签平台</a><br>
+				<span>国内唯一实现了电子合同与纸质合同（ETP,Electronic To Paper）自由切换签署、使用的互联网签约平台</span>
+			</p>
+			<p>
+				<a href="production.html">数字指纹印章（DFS, Digital Fingerprint Seal）</a><br>
+				<span>依托专利技术，在司法鉴定中能够取得可靠的证据链，确保其不可伪造，不可否认</span>
+			</p>
+			<p>
+				<a href="production.html">安全用印监管系统</a><br>
+				<span>为政府机构提供专门的电子签章产品，每个印章达到“一章一纹一密”的防伪标准，提供电子文书可直接打印的便捷服务</span>
+			</p>
+		</div>
+		<!--<div class="footer-news">
+			<h3 class="jby-h3">最新动态</h3>
+			<p>
+				<a href="###">我国拟规定单位持伪造发票将处罚有关责任人</a>
+			</p>
+			<p>
+				<a href="###">伪造“存款证实书”，齐鲁银行案涉及资金或超10亿</a>
+			</p>
+			<p>
+				<a href="###">河南村干部代办假结婚证 每个证收取1000元</a>
+			</p>
+			<p>
+				<a href="###">中国男子在日涉嫌使用伪造盖章公文再次被捕</a>
+			</p>
+			<p>
+				<a href="###">贫困地区政府官员用假公章4年套取9000余万公款外逃</a>
+			</p>
+		</div>-->
+		<div class="footer-contact">
+			<h3 class="jby-h3">联系我们</h3>
+			<div>
+				<em>北京</em>
+				<p>地址：北京市海淀区四道口路银辰大厦608室</p>
+				<p>电话：13998665335</p>
+				<p>邮箱：wk.tang@sstdd.com</p>
+			</div>
+			<div>
+				<em>大连</em>
+				<p>地址：大连市高新园区黄浦路596号211室</p>
+				<p>电话：0411-84790479 /156-5718-5932</p>
+				<p>邮箱：fl.meng@sstdd.com</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div>Copyright&nbsp;&copy;北京京本源高新技术有限公司</div>
+		<div>京ICP备05000698号</div>
+	</div>
+</footer>
+</body>
+</html>

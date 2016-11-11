@@ -1,0 +1,187 @@
+/* 初始化
+----------------------------------------------------------------------------------------------------------*/
+html, body {
+    font: normal 62.5% "Microsoft Yahei", Helvetica, Arial, Verdana, sans-serif;
+    word-spacing: normal;
+    color: #676b6d;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #676b6d;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+}
+
+a img {
+    float: left;
+}
+
+em, i {
+    font-style: normal;
+}
+
+/* 共通样式
+------------------------------------------------------------------------------------------------------*/
+.jby-h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.jby-h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+/* 固定导航样式
+----------------------------------------------------------------------------------------------------------*/
+.jby-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    padding-left: 5%;
+    background-color: #fff;
+    display: flex;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    box-shadow: 1px 1px 4px 1px #999;
+}
+
+.jby-logoBox {
+    padding: .8rem 0;
+}
+
+.jby-menuBox {
+    margin-left: 5%;
+    width: 50%;
+}
+
+.jby-menu {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jby-menu > li {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.jby-header .jby-menu li a {
+    display: flex;
+    align-items: center;
+    padding: 0 .8rem;
+    height: 100%;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.jby-header .jby-menu li a:hover {
+    background-color: #E54343;
+    color: #fff;
+}
+
+/* 页脚样式
+-----------------------------------------------------------------------------------------------------------*/
+.jby-footer {
+    overflow: hidden;
+    background-color: #1e2132;
+    padding: 3rem 5%;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    color: #f2f2f2;
+}
+
+.footer-top > div {
+    width: 25%;
+}
+
+.footer-top a {
+    font-size: 1.4rem;
+    color: #f2f2f2;
+}
+
+.footer-top a:hover {
+    color: #E54343;
+}
+
+.footer-top p {
+    padding: 5px 0;
+}
+
+.footer-top span {
+    color: #676b6d;
+}
+
+.footer-contact em {
+    color: #E54343;
+    font-size: 1.4rem;
+}
+
+.footer-bottom {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px #676b6d solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* 标题导航共通样式
+-----------------------------------------------------------------------------------------------------------*/
+.jby-title {
+    height: 15rem;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.jby-title p {
+    font-size: 1.6rem;
+}
+
+.jby-title-nav {
+    padding: 1rem 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-nav-tab {
+    background-color: #f2f2f2;
+    padding: .5rem .8rem;
+    margin: 0 1rem;
+    border-radius: 1rem;
+}
+
+.title-nav-tab:hover,
+.title-nav-tab.active {
+    background-color: #E54343;
+    color: #fff;
+}
